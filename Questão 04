@@ -1,0 +1,11 @@
+def numeros(n):
+    numero_invertido = int(str(n)[::-1])
+    return numero_invertido
+
+def main():
+    numero = int(input("Digite um número para ver a sua forma invertida: "))
+    q = numeros(numero)
+    print(f'{q}')
+
+if __name__=='__main__':
+    main()
