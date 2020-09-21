@@ -1,0 +1,7 @@
+soma = quant = media = 0
+num = int(input('Digite um número: '))
+    soma = soma + num
+    quant = quant + 1
+    media = soma/ quant
+print(f'Você digitou {números} números e a {média} média'.quant, media)
+    
