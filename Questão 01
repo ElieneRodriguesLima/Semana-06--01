@@ -1,0 +1,19 @@
+deposito = int(input("Qual o depósito inicial?: "))
+taxa_anual = float(input("Informe a taxa de juros: "))
+
+ano = maior = menor = 0
+dobro = deposito*2
+
+while ano < deposito:
+    ano += 1
+    if ano == 1:
+        maior = menor = ano
+        taxa_anual = ((taxa_anual / 100) * deposito)
+        valor = deposito + taxa_anual              
+    else:
+        taxa_anual = ((taxa_anual / 100) * valor)
+        valor = round(valor + taxa_anual, 2)
+        if valor >= deposito and valor <= dobro+taxa_anual:
+            if ano > maior:
+                maior = ano
+print(f'O valor acumulado irá dobrar-se em {maior} anos.')
